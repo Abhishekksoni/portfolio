@@ -33,11 +33,11 @@ export const metadata: Metadata = {
     title: "Abhishek Soni | Software Engineer & Full-Stack Developer",
     description:
       "Building scalable, AI-powered web solutions with TypeScript, Next.js, and Node.js.",
-    url: "https://abhisheksoni.me",
+    url: "https://abhisheksoniportfolio.vercel.app/",
     siteName: "Abhishek Soni Portfolio",
     images: [
       {
-        url: "https://abhisheksoni.me/og-image.png",
+        url: "https://abhisheksoniportfolio.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Abhishek Soni Portfolio Preview",
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
     title: "Abhishek Soni | Software Engineer & Full-Stack Developer",
     description:
       "Explore my portfolio of AI-driven web applications built with React, Next.js, and Node.js.",
-    images: ["https://abhisheksoni.me/og-image.png"],
+    images: ["https://abhisheksoniportfolio.vercel.app/og-image.png"],
   },
   alternates: {
-    canonical: "https://abhisheksoni.me",
+    canonical: "https://abhisheksoniportfolio.vercel.app/",
   },
   icons: {
     icon: "/webIcon.png",
