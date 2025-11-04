@@ -3,23 +3,30 @@ import { ArrowRight, Award, Cloud, Code, Cpu, Database, Download, ExternalLink, 
 import React from 'react';
 
 export default function Portfolio() {
-  const [scrollY, setScrollY] = React.useState(0);
-  const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-  const [isLoaded, setIsLoaded] = React.useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const heroRef = React.useRef(null);
-  const projectRefs = React.useRef([]);
+const [scrollY, setScrollY] = React.useState<number>(0);
+
+const [mousePosition, setMousePosition] = React.useState<{ x: number; y: number }>({ 
+  x: 0, 
+  y: 0 
+});
+
+const [isLoaded, setIsLoaded] = React.useState<boolean>(false);
+const [mobileMenuOpen, setMobileMenuOpen] = React.useState<boolean>(false);
+
+const heroRef = React.useRef<HTMLDivElement | null>(null);
+const projectRefs = React.useRef<(HTMLDivElement | null)[]>([]);
+
 
   React.useEffect(() => {
     setTimeout(() => setIsLoaded(true), 100);
 
     const handleScroll = () => setScrollY(window.scrollY);
-    const handleMouseMove = (e) => {
-      setMousePosition({ 
-        x: (e.clientX / window.innerWidth) * 100,
-        y: (e.clientY / window.innerHeight) * 100 
-      });
-    };
+const handleMouseMove = (e: MouseEvent) => {
+  setMousePosition({ 
+    x: (e.clientX / window.innerWidth) * 100,
+    y: (e.clientY / window.innerHeight) * 100,
+  });
+};
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('mousemove', handleMouseMove);
