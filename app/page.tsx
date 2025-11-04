@@ -410,7 +410,9 @@ const handleMouseMove = (e: MouseEvent) => {
             {projects.map((project, i) => (
               <div
                 key={i}
-                ref={el => projectRefs.current[i] = el}
+                ref={(el) => {
+  projectRefs.current[i] = el;
+}}
                 className="observe opacity-0 group relative"
                 style={{ transitionDelay: `${i * 150}ms` }}
               >
