@@ -61,20 +61,18 @@ const handleMouseMove = (e: MouseEvent) => {
 
   const projects = [
 {
-  "name": "LearnLinks",
-  "tagline": "AI-Powered Learning Automation Platform",
-  "tech": ["Next.js", "TypeScript", "Gemini AI"],
-  "description": "LearnLinks is an intelligent learning assistant that transforms raw documents, PDFs, and web content into structured lessons, quizzes, summaries, and personalized study material. It leverages Gemini Vision and LLM reasoning to analyze content deeply and auto-generate high-quality educational modules with minimal manual effort.",
-  "features": [
-    "Auto-generate lessons, summaries, and flashcards from any document",
-    "Shareable study links for teams, students, and institutions"
+  name: 'LearnLinks',
+  tagline: 'AI-Powered Learning Resource Generator',
+  tech: ['Next.js', 'TypeScript', 'Groq LLM', 'PostgreSQL', 'Prisma', 'NextAuth'],
+  description:
+    'Smart AI platform that generates structured courses and curated learning resources for any topic. Utilizes Groq LLM for instant course creation and integrates YouTube + Google Search APIs for high-quality, context-aware content discovery.',
+  metrics: [
+    'Eliminates 90% of manual research time',
+    'Unified dashboard for saved courses',
+    'Automatic sourcing of videos + articles'
   ],
-  "metrics": [
-    "80% faster course creation",
-    "95% accurate concept extraction",
-  ],
-  "link": "https://learnlinks.vercel.app/",
-  "gradient": "from-emerald-500/20 to-green-500/20"
+  link: 'https://learnlinks.vercel.app/',
+  gradient: 'from-purple-500/20 to-indigo-500/20'
 },
     {
       name: 'ArtisansAI',
