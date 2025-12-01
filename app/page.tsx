@@ -60,6 +60,22 @@ const handleMouseMove = (e: MouseEvent) => {
   ];
 
   const projects = [
+{
+  "name": "LearnLinks",
+  "tagline": "AI-Powered Learning Automation Platform",
+  "tech": ["Next.js", "TypeScript", "Gemini AI"],
+  "description": "LearnLinks is an intelligent learning assistant that transforms raw documents, PDFs, and web content into structured lessons, quizzes, summaries, and personalized study material. It leverages Gemini Vision and LLM reasoning to analyze content deeply and auto-generate high-quality educational modules with minimal manual effort.",
+  "features": [
+    "Auto-generate lessons, summaries, and flashcards from any document",
+    "Shareable study links for teams, students, and institutions"
+  ],
+  "metrics": [
+    "80% faster course creation",
+    "95% accurate concept extraction",
+  ],
+  "link": "https://learnlinks.vercel.app/",
+  "gradient": "from-emerald-500/20 to-green-500/20"
+},
     {
       name: 'ArtisansAI',
       tagline: 'AI-Powered Marketing Automation',
@@ -111,7 +127,7 @@ const handleMouseMove = (e: MouseEvent) => {
     company: 'Esnad Firm',
     location: 'Saudi Arabia',
     role: 'Software Engineer',
-    period: 'June 2024 – Present',
+    period: 'June 2024 – Oct 2024',
     achievements: [
       'Architected scalable REST APIs serving 10k+ daily requests with 30% performance improvement',
       'Implemented JWT-based authentication system with role-based access control (RBAC)',
